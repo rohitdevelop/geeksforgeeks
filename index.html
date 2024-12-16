@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GfG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <button id="menu-toggle">☰</button>
+            <div class="mini">
+                <p>Courses</p>
+                <p>Tutorials</p>
+                <p>Jobs</p>
+                <p>Practice</p>
+                <p>Contests</p>
+            </div>
+            <div class="logo"><img src="GeeksforGeeks.svg.png"></div>
+            <div class="mini2">
+                <div id="icons"> 
+                    <p id="serch"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960"
+                            width="25px" fill="#e8eaed">
+                            <path
+                                d="M792-120.67 532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l260 258.66-48 48Zm-414-272q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z" />
+                        </svg></p>
+                    <p id="mode" class="toggle-icon"> <svg xmlns="http://www.w3.org/2000/svg" height="25px"
+                            viewBox="0 -960 960 960" width="25px" fill="#e8eaed">
+                            <path
+                                d="M480-346.67q55.33 0 94.33-39t39-94.33q0-55.33-39-94.33t-94.33-39q-55.33 0-94.33 39t-39 94.33q0 55.33 39 94.33t94.33 39Zm0 66.67q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-446.67H40v-66.66h160v66.66Zm720 0H760v-66.66h160v66.66ZM446.67-760v-160h66.66v160h-66.66Zm0 720v-160h66.66v160h-66.66ZM260-655.33l-100.33-97 47.66-49 96 100-43.33 46Zm493.33 496-97.66-100.34 45-45.66 99.66 97.66-47 48.34Zm-98.66-541.34 97.66-99.66 49 47L702-656l-47.33-44.67ZM159.33-207.33 259-305l46.33 45.67-97.66 99.66-48.34-47.66ZM480-480Z" />
+                        </svg></p>
+                    <p id="bell"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#e8eaed">
+                            <path
+                                d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
+                        </svg></p>
+                    <p id="book" class="toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
+                        </svg></p>
+                </div>
+                <div id="pro">R</div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom-nav">
+            <p>
+                < </p>
+                    <p>Trending Now</p>
+                    <p>DSA</p>
+                    <p>Web Tech</p>
+                    <p>Foundational Courses</p>
+                    <p>Data Scienece</p>
+                    <p>Practice Problem</p>
+                    <p>pyton</p>
+                    <p>Machine Learning</p>
+                    <p>Java Script </p>
+                    <p>System desgine</p>
+                    <p>Django</p>
+                    <p>DevOps Tutorial</p>
+                    <p>Java</p>
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>ReactJS</p>
+                    <p>Node Js</p>
+                    <p>Web Devlopment</p>
+                    <p> > </p>
+        </div>
+    </header>
+
+
+    <!-- ----------------------nav----------------------- -->
+    <div class="q-box">
+        <div class="text">Hello, What Do You Want To Learn?</div>
+        <div class="search">
+            <div class="input-container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"
+                    fill="#e8eaed" class="search-icon">
+                    <path
+                        d="M792-120.67 532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l260 258.66-48 48Zm-414-272q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z" />
+                </svg>
+                <input id="bar" type="text" placeholder="GeeksforGeeks courses">
+            </div>
+
+        </div>
+        <div class="option">
+            <span class="box1">Winter Carnival Ticket</span>
+            <span class="box2">Master DS & ML</span>
+            <span class="box3">Go Premium</span>
+            <span class="box4">Full Stack Live Classes</span>
+        </div>
+    </div>
+
+
+    <div class="courses">
+        <div class="cours-prize">
+            <div class="c-view">
+                <p id="add1">Courses</p>
+                <p id="add2">View All</p>
+            </div>
+            <div class="co-grid">
+                <div class="co1">
+                    <div id="det1">
+                        <h2 id="tx">
+                            Winter <br>
+                            Carnival <br>
+                            Ticket <br>
+                        </h2>
+                        <p id="sm">Pay less, Get More</p>
+                    </div>
+                    <div id="al2">
+                        <h3>
+                            Get Courses on offer & GFG Merchandise
+                        </h3>
+                        <div id="ano">
+                            <p id="po"> Limited Tickets Available</p>
+                            <button id="bu"> Explore now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="co2">
+                    <div id="det2">
+                        <h2 id="tx">
+                            Winter <br>
+                            Carnival <br>
+                            Ticket <br>
+                        </h2>
+                        <p id="sm">Pay less, Get More</p>
+                    </div>
+                    <div id="al2">
+                        <h3>
+                            Get Courses on offer & GFG Merchandise
+                        </h3>
+                        <div id="ano">
+                            <p id="po"> Limited Tickets Available</p>
+                            <button id="bu"> Explore now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="co3">
+                    <div id="det3">
+                        <h2 id="tx">
+                            Winter <br>
+                            Carnival <br>
+                            Ticket <br>
+                        </h2>
+                        <p id="sm">Pay less, Get More</p>
+                    </div>
+                    <div id="al2">
+                        <h3>
+                            Get Courses on offer & GFG Merchandise
+                        </h3>
+                        <div id="ano">
+                            <p id="po"> Limited Tickets Available</p>
+                            <button id="bu"> Explore now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="co4">
+                    <div id="det4">
+                        <h2 id="tx">
+                            Winter <br>
+                            Carnival <br>
+                            Ticket <br>
+                        </h2>
+                        <p id="sm">Pay less, Get More</p>
+                    </div>
+                    <div id="al2">
+                        <h3>
+                            Get Courses on offer & GFG Merchandise
+                        </h3>
+                        <div id="ano">
+                            <p id="po"> Limited Tickets Available</p>
+                            <button id="bu"> Explore now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="co5">
+                    <div id="det5">
+                        <h2 id="tx">
+                            Winter <br>
+                            Carnival <br>
+                            Ticket <br>
+                        </h2>
+                        <p id="sm">Pay less, Get More</p>
+                    </div>
+                    <div id="al2">
+                        <h3>
+                            Get Courses on offer & GFG Merchandise
+                        </h3>
+                        <div id="ano">
+                            <p id="po"> Limited Tickets Available</p>
+                            <button id="bu"> Explore now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="co6">
+                    <div id="det6">
+                        <h2 id="tx">
+                            Winter <br>
+                            Carnival <br>
+                            Ticket <br>
+                        </h2>
+                        <p id="sm">Pay less, Get More</p>
+                    </div>
+                    <div id="al2">
+                        <h3>
+                            Get Courses on offer & GFG Merchandise
+                        </h3>
+                        <div id="ano">
+                            <p id="po"> Limited Tickets Available</p>
+                            <button id="bu"> Explore now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="level-up">
+        <div class="nav-up">
+            <div class="up">
+                <h2>Explore</h2>
+            </div>
+            <div class="explore">
+                <div class="ex1">
+                    <h1>Data Structure and Algorithms</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex2">
+                    <h1>Practice DSA</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex3">
+                    <h1>web devlopment</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex4">
+                    <h1>Python</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex5">
+                    <h1>Machine Learning</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex6">
+                    <h1>AI ML & data Scienece</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex7">
+                    <h1>DevOps</h1>
+                    <button>View more >> </button>
+                </div>
+                <div class="ex8">
+                    <h1>System Design</h1>
+                    <button>View more >> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="DSA">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>DSA</h3>
+                <p>View All</p>
+            </div>
+            <div class="dsa-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>Web devlopment</h3>
+                <p>View All</p>
+            </div>
+            <div class="web-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>AI & ML data Scienece</h3>
+                <p>View All</p>
+            </div>
+            <div class="ai-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>Programing language</h3>
+                <p>View All</p>
+            </div>
+            <div class="language-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>Interview prepration</h3>
+                <p>View All</p>
+            </div>
+            <div class="inter-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>CS subjet</h3>
+                <p>View All</p>
+            </div>
+            <div class="cs-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>Database</h3>
+                <p>View All</p>
+            </div>
+            <div class="data-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>DevOps</h3>
+                <p>View All</p>
+            </div>
+            <div class="devops-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>Tutorial</h3>
+                <p>View All</p>
+            </div>
+            <div class="tuto-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>GFG School</h3>
+                <p>View All</p>
+            </div>
+            <div class="School-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>stacks</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>code</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Heep</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Graph</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <div class="dsa">
+            <div class="dsa-nav">
+                <h3>Must Explore</h3>
+                <p>View All</p>
+            </div>
+            <div class="must-option">
+                <div id="js">
+                    <h3>Algoritham</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Array</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>Linked list</h3>
+                    <button> -> </button>
+                </div>
+                <div id="js">
+                    <h3>searching</h3>
+                    <button> -> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-line"></div>
+ <!-- -------------------footer---------------------- -->
+      <footer>
+        <div class="footer-container">
+          <!-- Company Section -->
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Advertise with Us</a></li>
+              <li><a href="#">Placement Training</a></li>
+            </ul>
+          </div>
+    
+          <!-- Tutorials Section -->
+          <div class="footer-section">
+            <h3>Python Tutorials</h3>
+            <ul>
+              <li><a href="#">Python Programming</a></li>
+              <li><a href="#">Django Tutorial</a></li>
+              <li><a href="#">Flask Tutorial</a></li>
+              <li><a href="#">Web Scraping</a></li>
+              <li><a href="#">OpenCV Tutorial</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+    
+          <!-- Web Technologies Section -->
+          <div class="footer-section">
+            <h3>Web Technologies</h3>
+            <ul>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Node.js</a></li>
+              <li><a href="#">Bootstrap</a></li>
+            </ul>
+          </div>
+    
+          <!-- Databases Section -->
+          <div class="footer-section">
+            <h3>Databases</h3>
+            <ul>
+              <li><a href="#">SQL</a></li>
+              <li><a href="#">MySQL</a></li>
+              <li><a href="#">MongoDB</a></li>
+              <li><a href="#">PostgreSQL</a></li>
+              <li><a href="#">PL/SQL</a></li>
+              <li><a href="#">NoSQL</a></li>
+            </ul>
+          </div>
+    
+          <!-- DevOps Section -->
+          <div class="footer-section">
+            <h3>DevOps</h3>
+            <ul>
+              <li><a href="#">Git</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+              <li><a href="#">CI/CD Pipelines</a></li>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">Azure</a></li>
+            </ul>
+          </div>
+    
+          <!-- System Design Section -->
+          <div class="footer-section">
+            <h3>System Design</h3>
+            <ul>
+              <li><a href="#">Low-Level Design</a></li>
+              <li><a href="#">High-Level Design</a></li>
+              <li><a href="#">Design Patterns</a></li>
+              <li><a href="#">Interview Questions</a></li>
+              <li><a href="#">UML Diagrams</a></li>
+              <li><a href="#">OOP Principles</a></li>
+            </ul>
+          </div>
+    
+          <!-- Competitive Exams Section -->
+          <div class="footer-section">
+            <h3>Competitive Exams</h3>
+            <ul>
+              <li><a href="#">UGC NET</a></li>
+              <li><a href="#">GATE</a></li>
+              <li><a href="#">SSC CGL</a></li>
+              <li><a href="#">IBPS PO</a></li>
+              <li><a href="#">SBI PO</a></li>
+              <li><a href="#">UPSC</a></li>
+            </ul>
+          </div>
+    
+          <!-- Social Media Section -->
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
